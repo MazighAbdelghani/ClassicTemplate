@@ -1,0 +1,45 @@
+1- normalize is very important for compatibilité with browsers :
+
+but if you use bootstrap or other frameworks you don't have to include it it's already include
+
+2- pour corriger le float on utilise :
+
+    clear: both 
+    or
+    overflow : hidden for element wich contain the elements floated
+    
+    
+3- pour la ligne qui est en dessous des liens c'est mieux de la faire ( border 1px solid transparent ) puis dans le hover on lui donne une coleur car :
+
+c'est plus stable que un element qui n'existe pas reapparer
+
+
+4- pour cree cette ligne c'est mieux de ne pas faire padding pour qu'elle serait exactement la meme largeur:
+
+    onpeut aussi la faire avec (after)
+    
+    
+5- c'est bien d'utiliser images avec dimensions 1920*1275 
+
+
+6- on a fait navbar et header dans 2 div differents mais le navbar a rentre dans le header c'est ce qu'on appel :
+
+    background transpart on la fait :
+    
+    .navbar { height: 0}
+    
+    
+6- z-index need position relative
+
+7- when there is an overlay you should use z-index for  that the write appear
+
+8- pour aue les icons de font awesome serant de la meme taille on utilise fa fa-fw
+
+9- orsque le margin ne donne pas d'effet le probleme est surement dans la posion: relative
+
+10- 2 div ont entrer l'un dans l'autre je l'ai regle par donne au premier overflow hidden 
+
+11- lorsque le div a (posion: relative) padding ne prend pas cad les elements de dedans vont monter et depasser ce padding donc on doit donner a ces elements margin
+
+
+12- when you use float you should give the parent overflow:hidden

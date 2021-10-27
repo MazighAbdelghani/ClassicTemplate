@@ -1,0 +1,679 @@
+/*start general rules  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*end general rules  */
+
+
+/*start framework  */
+
+
+.container {
+
+    width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.spechead {
+    position: relative;
+    text-transform: capitalize
+    
+}
+.spechead:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 40px;
+    width: 40px;
+    border-bottom: 2px solid #111;
+    font-weight: normal;
+    
+    
+}
+
+.separ {
+    
+    border: 1px solid #ccc;
+
+    
+}
+
+
+
+
+/*end framework  */
+
+
+/*start navbar*/
+
+
+.navbar {
+
+    background: #ccc;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    font-size: 18px;
+    height: 0;
+    position: relative;
+    z-index: 2
+}
+
+
+.navbar .brand {
+    text-transform: uppercase;
+    float: left;
+    width: 40%;
+    margin-top: 25px
+}
+
+.navbar .links {
+    float: left;
+    width: 60%;
+    margin-top: 30px
+}
+
+
+.navbar .links li {
+    display: inline-block;
+    margin-left: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+/*    font-size: 19px;*/
+}
+.navbar .links li a {
+    color: #fff;
+    text-decoration: none
+}
+
+
+.navbar .links li.act ,
+.navbar .links li.act a {
+    color: #1abc9c;
+    border-bottom: 1px solid #1cbc9c;
+    padding-bottom: 3px
+}
+
+
+.navbar .links li:hover ,
+.navbar .links li:hover a {
+    color: #1abc9c;
+    border-bottom: 1px solid #1cbc9c;
+    padding-bottom: 3px
+}
+
+/*end navbar*/
+
+
+
+/*start header */
+
+.header {
+    background: url(../img/manhattan-336708_1280.jpg);
+    position: relative;
+    background-size: cover;
+}
+
+.header .over {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%
+}
+
+
+
+
+
+/* end header */
+
+
+
+
+/* bxslide */
+
+.header .bx-wrapper {
+
+    height: 100%;
+    background: none;
+    border: 0
+    
+
+}
+
+.header .bx-wrapper .bx-viewport {
+
+    border: 0;
+    background: none;
+    box-shadow: none;
+    text-align: center;
+    height: 100% !important;
+}
+
+.header .bxslider {
+
+    height: 100%;
+
+}
+
+.header .bxslider li {
+
+    display: block;
+    color: white;
+
+}
+
+.header .bxslider li h2 {
+
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-transform: capitalize
+
+}
+
+.header .bxslider li h2 span  {
+
+   color: #1abc9c;
+
+}
+
+
+
+.header .bxslider li p {
+
+   
+
+}
+
+
+/* bxslide */
+
+
+
+
+
+/*start services */
+
+
+.services {
+    
+    
+    padding: 80px 0 40px;
+    width: 100%;
+    overflow: hidden
+}
+
+.services h2 {
+    
+    margin-bottom: 50px
+}
+
+
+.services .item {
+
+    width: 33.333%;
+    float: left;
+    margin-bottom: 30px
+    
+}
+.services .item i {
+
+    width: 20%;
+    float: left;
+    margin-right: 6%;
+    color: #1abc9c
+    
+}
+
+
+.services .item .info {
+
+    width: 69%;
+    float: left;
+    
+}
+.services .item .info h3 {
+
+    font-weight: normal;
+    margin-bottom: 20px
+    
+}
+
+.services .item .info p {
+
+    color: #aaa;
+    font-size: 14px
+    
+    
+}
+
+
+/*end services */
+
+
+
+
+/*start team */
+
+
+.team {
+    width: 100%;
+    padding: 70px 0 100px;
+    overflow: hidden;
+    
+    
+}
+
+.team .box:first-child {
+    
+    width: 30%;
+    float: left
+}
+
+.team .box:not(:first-child) {
+    width: 15%;
+    float: left;
+    text-align: center;
+    margin-left: 2%;
+    position: relative;
+    transition: all 2s ease-in-out;
+    height: 135px
+    
+    
+}
+
+.team .box:not(:first-child) img {
+   width: 100%;
+    height: 100%
+    
+}
+
+.team .box .overlay{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(26,188,156,0.75);
+    line-height: 115px;
+    color: #fff;
+    display: none
+    
+}
+
+.team .box:not(:first-child):hover .overlay{
+
+    
+    display: block
+    
+}
+
+
+.team .box:first-child h3 {
+   margin-bottom: 27px;
+    padding-bottom: 0;
+    position: relative
+    
+}
+.team .box:first-child h3:after {
+   content: '';
+    position: absolute;
+    width: 40px;
+    border-bottom: 2px solid #111;
+    left: 0;
+    top: 30px
+    
+    
+}
+
+.team .box p {
+   font-size: 15px;
+   color: #888;
+    
+}
+
+
+/*start team */
+
+
+/*start testimonials */
+
+.testi {
+    height: 400px;
+    padding: 80px 0;
+    text-align: center;
+    background: url('../img/man-791049_1280.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.testi .ov {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6)
+    
+}
+
+
+
+.testi h2 {
+    
+    color: #fff;
+    margin-bottom: 70px;
+    font-weight: normal;
+    margin-top: 60px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: cursive
+}
+
+
+.testi h2 {
+    
+    color: #fff;
+    margin-bqottom: 70px;
+    font-weight: normal;
+    margin-top: 60px;
+    font-size: 25px
+}
+
+.testi q {
+    
+    color: #ccc;
+    display: block;
+    margin-left: 220px;
+    margin-right: 220px;
+    font-weight: normal;
+    line-height: 1.7;
+    font-size: 18px;
+    margin-bottom: 60px
+    
+}
+
+.testi p {
+    
+    color: #1abc9c;
+    font-size: 20px;
+    text-transform: capitalize
+    
+}
+
+
+
+.testi .slider div:not(.active) {
+    
+    display: none
+    
+}
+
+
+
+
+
+/*start testimonials */
+
+
+
+/*start projects */
+
+
+.projects {
+    padding: 60px 0;
+}
+
+.projects h2 {
+    margin-bottom: 40px;
+    font-weight: normal
+}
+
+.projects ul {
+    margin-bottom: 40px
+}
+
+.projects ul li {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #aaa;
+    margin-right: 7px;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    outline: 0
+}
+
+.projects ul li.sel {
+    background: #1abc9c;
+    color: #fff
+}
+
+.projects .gallery .row {
+    overflow: hidden;
+   
+}
+
+.projects .gallery .row .im {
+    width: 31%;
+    float: left;
+    height: 240px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 2%
+    
+}
+
+/*
+.projects .gallery .row .im:nth-of-type(2) {
+    margin-left: 2%;
+    margin-right: 2%
+    
+}
+*/
+
+.projects .gallery .row .im img {
+    width: 100%;
+    height: 100%
+}
+
+.projects .gallery .row .overl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28,188,156,0.75);
+    text-align: center;
+    line-height: 240px;
+    color: white;
+    font-size: 20px;
+    display: none
+}
+
+.projects .gallery .row .heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    display: none
+}
+
+
+.projects .gallery .row .im:hover .overl ,
+.projects .gallery .row .im:hover .heart {
+    
+    display: block
+}
+
+
+
+
+
+
+/*start projects */
+
+
+
+/*start footer */
+
+
+.footer  {
+   background: #333;
+   color: #eee;
+   width: 100%;
+    overflow: hidden;
+    padding: 50px 0
+    
+}
+
+.footer .col {
+   
+    width: 25%;
+    float: left;
+}
+
+.footer .col h2 {
+   font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px
+    
+}
+
+.footer .inf p {
+   
+   color:  #888;
+    margin-bottom: 30px
+    
+}
+
+.footer .inf i {
+  
+   color:  #eee;
+    margin-right: 10px;
+    border: 1px solid  #ddd;
+    padding: 8px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer
+    
+}
+
+.footer .tag span {
+  
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #888;
+    margin-right: 7px;
+    border-radius: 3px;
+    color: #ddd;
+    cursor: pointer;
+    outline: 0;
+    margin-bottom: 7px
+    
+    
+}
+
+.footer .post  {
+  overflow: hidden;
+  margin-bottom: 10px
+}
+
+.footer .post img { 
+    float: left;
+    margin-right: 5%;
+    width: 80px;
+    cursor: pointer
+}
+
+.footer .post h4 {
+   margin: 0;
+   font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    margin-top: 3px;
+    cursor: pointer;
+    
+}
+
+.footer .post p {
+   color:  #777;
+    text-transform: capitalize
+    
+}
+
+.footer .blog ul li {
+   color:  #bbb;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer
+    
+}
+
+
+.copy {
+   
+    margin-top: 80px;
+    
+    
+}
+
+
+
+
+
+/*start footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
